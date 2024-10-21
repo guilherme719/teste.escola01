@@ -44,7 +44,32 @@ if escolha == 2:
     print("Projeto em fase de desenvolvimento")
     
 if escolha == 3:
-    print("Projeto em fase de desenvolvimento")
+        print("\n*****CADASTRO DE PRODUTO*****")
+        
+        print()
+        print()
+        
+        id = int(input("Digite o código do produto: "))
+        produto = str(input("Digite o nome do produto: "))
+        categoria = str(input("Digite a categoria do produto: "))
+        modelo = str(input("Digite o modelo do produto: "))
+        marca = str(input("Digite a marca do produto: "))
+        pacote = int(input("Digite a quantidade do produto por pacote: "))
+        valor = float(input("Digite o valor unitário do produto: "))
+        valor_final = pacote * valor
+        print()
+        
+        resultado = int(input("Deseja visualizar o cadastro: \n[1 - para sim] \nou \nclear[0 - para não]: "))
+        
+        if resultado == 1:
+            print(f" CÓDIGO DO PRODUTO: [{id}]")
+            print(f" NOME: [{produto}]")
+            print(f" CATEGORIA: [{categoria}]")
+            print(f" MODELO: [{modelo}]")
+            print(f" MARCA: [{marca}]")
+            print(f" QDT POR PACOTE: [{pacote}]")
+            print(f" VALOR UNITÁRIO: [{valor}]")
+            print(f" VALOR FINAL: [{valor_final}]")
     
 if escolha == 4:
     print("")
