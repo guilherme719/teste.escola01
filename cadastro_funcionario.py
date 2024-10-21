@@ -1,32 +1,31 @@
-#id
-#nome_completo
-#cpf
-#profissao
-#area
-#salario
-#bonificacao
+print("\n*****Cadastro De Funcionarios:***** ")
 
-id = int(input("digite sua matricula: "))
-nome_completo = str(input("seu nome completo: "))
-cpf = int(input("seu cpf: "))
-profissao =str(input("profissão: "))
-area = str(input("area: "))
-salario = float(input("Salario: "))
-bonificacao = float(input("bonificaçao: "))
+print("")
+print("")
+
+id = int(input("Digite a matricula: "))
+nome_completo = str(input("Digite o nome completo: "))
+cpf = int(input("Digite o CPF: "))
+profissao =str(input("DIgite a Profissão: "))
+area = str(input("Digite a Area: "))
+salario = float(input("Digite o Salario: "))
+bonificacao = float(input("Digite a Bonificaçao: "))
 salario_bruto = salario + bonificacao
 
 print("")
 print("")
 
-print(f"identificação do funcionario: {id}")
-print(f"funcionario: {nome_completo}")
-print(f"cpf: {cpf}")
-print(f"profissâo: {profissao}")
-print(f"area: {area}")
-print(f"salario:  {salario}")
-print(f" bonificação: {bonificacao}")
-print(f"salario bruto:  {salario_bruto}")
+print("#####[CADASTRO DE FUNCIONÁRIOS]#####")
+print("") 
+print(f"Identificação do funcionario: [{id}]")
+print(f"Funcionario: [{nome_completo}]")
+print(f"CPF: [{cpf}]")
+print(f"Profissâo: [{profissao}]")
+print(f"Area: [{area}]")
+print(f"Salario: [{salario}]")
+print(f"Bonificação: [{bonificacao}]")
+print(f"Salario bruto: [{salario_bruto}]")
 
 print("")
-print("fim do programa")
+print("Fim do programa")
 print("")
